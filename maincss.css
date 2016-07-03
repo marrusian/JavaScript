@@ -1,0 +1,73 @@
+/* Misc Styles */
+div#coordBox {
+    position: absolute;
+	background-color: white;
+	
+	width: 30px;
+	height: 200px;
+	
+	border: 1px solid black;
+	border-right: none;
+	border-radius: 15px 0 0 15px;
+	
+	box-shadow: 0 0 5px black;
+	top: 50%;
+	transform: translate(-100%,-50%);
+}
+
+div#coordBox span {
+    box-sizing: border-box; 
+    width: 200px;
+	height: 30px;
+
+    position: absolute;
+	bottom: 0;
+ 
+    padding: 5px 10px 0 10px;
+	transform: rotateZ(-90deg);
+	transform-origin: 15px 50%;
+	
+	text-align: center;
+}
+
+#hex {
+    position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 100%);
+	border: 1px solid black;
+	border-top: none;
+	
+}
+/*** Misc ***/
+
+
+/* Main Styles */
+main#gameframe {
+	width: 60vw;
+	height: 45vw;
+	background-color:black;
+	margin: 0 auto 0 auto;
+	position: relative;
+}
+
+/*** Main Styles ***/
+
+/* SVG Styles */
+svg {
+	position: absolute;
+}
+
+.target {
+    animation-name: pulse;
+	animation-duration: 2s;
+}
+
+@keyframes pulse {
+     0% {transform: scale(0.01, 0.01); opacity: 0.0;}
+    50%  {transform: scale(1, 1); opacity: 1.0;}
+    100% {transform: scale(0.01, 0.01); opacity: 0.0;}
+}
+
+
+/*** SVG Styles ***/
